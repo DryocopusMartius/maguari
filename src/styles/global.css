@@ -24,10 +24,10 @@
 .dark {
   color-scheme: dark;
 
-  --paper: #151910;
-  --ink: #59c18a;
+  --paper: #10120d;
+  --ink: #59c88d;
   --ink-soft: #9a9ca6;
-  --signal: #29ffa2;
+  --signal: #00ff91;
   --line: rgba(68, 59, 36, 0.721);
   --surface: #1a1b20;
 }
