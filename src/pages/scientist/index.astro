@@ -9,10 +9,13 @@ import { SITE } from '@/site.config';
 
 <BaseLayout title={SITE.name}>
   <section class="mx-auto max-w-3xl px-6 pt-16 pb-20 sm:pt-24">
-
+    <p class="text-ink-soft mb-6 inline-flex items-center gap-2 font-mono text-xs">
+      <span class="bg-signal h-1.5 w-1.5 rounded-full" aria-hidden="true"></span>
+      {SITE.status}
+    </p>
     <div class="flex items-center justify-center gap-3">
       <h1 class="font-display text-ink max-w-2xl text-4xl leading-[1.1] font-medium sm:text-5xl">
-      {SITE.tagline}
+      Using LiDAR to do forest inventory and uncover the secrets of forest ecosystems
       </h1>
       <svg
         class="	w-50 h-50 md:w-50 md:h-30"
@@ -22,17 +25,43 @@ import { SITE } from '@/site.config';
       </svg>
     </div>
     <p class="text-ink-soft mt-6 max-w-md">
-      Welcome to my personal little website! It is structured into two major components, my role as a scientist and my role as an arborist. In each you find some blog-posts, some information about ongoing and past projects and a gallery.
+      This is the page about my work as a forest scientist. If you are interested in my tree-climbing work, click below.
     </p>
 
     <div class="mt-8 flex flex-wrap items-center gap-3">
-      <Button href="/scientist" variant="solid">Tillman Reuter, the scientist</Button>
-      <Button href="/arborist" variant="solid">Tillman reuter, the tree climber</Button>
+      <Button href="/arborist" variant="solid">Tillman Reuter, the arborist</Button>
+      <Button href="#contact" variant="ghost">Text me!</Button>
     </div>
   </section>
 
+  <section id="cv" class="mx-auto max-w-3xl px-6 pb-20">
+    <SectionHeading eyebrow="CV" />
+    <p class="text-ink-soft max-w-xl">
+      2026: Research scientist at Dep. Spatial Structures and Digitization of Forests (Uni Göttingen)
+      2025: M.Sc Forest and Ecosystem Sciences
+      2023: B.Eng Forest Engineering
+    </p>
+    <a href="/about" class="text-signal mt-4 inline-block font-mono text-xs hover:underline">
+      My full CV ->
+    </a>
+  </section>
+
+  <section id="publications" class="mx-auto max-w-3xl px-6 pb-20">
+    <SectionHeading eyebrow="Publications" />
+    <p class="text-ink-soft max-w-xl">
+      Reuter, T., Seidel, S., & Seidel, D. (2026). Comparing Two Novel LiDAR-Based Indices for Quantifying Forest Structural Complexity. Ecology and Evolution, 16(5), e73605. https://doi.org/10.1002/ece3.73605
+
+    </p>
+    <a href="https://doi.org/10.1002/ece3.73605" class="text-signal mt-4 inline-block font-mono text-xs hover:underline">
+      doi.org/10.1002/ece3.73605 ->
+    </a>
+  </section>
+
   <section id="contact" class="mx-auto max-w-3xl px-6 pb-24">
-    <SectionHeading eyebrow="Let's talk" />
+    <SectionHeading eyebrow="Contact" />
+    <p class="font-display text-ink max-w-lg text-2xl sm:text-3xl">
+      Interested in collaboration?
+    </p>
     <a
       href={`mailto:${SITE.email}`}
       class="text-signal mt-4 inline-flex items-center gap-2 font-mono hover:underline"

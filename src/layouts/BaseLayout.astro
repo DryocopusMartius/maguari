@@ -12,12 +12,18 @@ interface Props {
 }
 
 const { title, description = SITE.description, image = '/og-image.png' } = Astro.props;
+
+// doesn't work yet, pathname is not created
+const pathname = Astro.url.pathname;
+let section = 'default'; // fallback
+if (pathname.startsWith('/scientist')) section = 'scientist';
+else if (pathname.startsWith('/arborist')) section = 'arborist';
 ---
 
 <!doctype html>
 <html lang={SITE.locale}>
   <head>
-    <BaseHead title={title} description={description} image={image} />
+    <BaseHead title={title} description={description} image={image} data-section={section}/>
   </head>
   <body id="top" class="bg-paper text-ink">
     <Header />

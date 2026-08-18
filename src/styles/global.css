@@ -14,6 +14,47 @@
   color-scheme: light;
 
   --paper: #d9f3e6; /* page background */
+  --ink: #393939; /* headers, titles */
+  --ink-soft: #1a1e30; /* blog text, footer, tags */
+  --signal: #c9c9c9; /* the one accent color */
+  --line: #5d8274; /* borders, rules */
+  --surface: #dadada; /* cards, raised panels */
+}
+
+.dark {
+  color-scheme: dark;
+
+  --paper: #10120d;
+  --ink: #cacaca;
+  --ink-soft: #9a9ca6;
+  --signal: #dddddd;
+  --line: rgba(67, 67, 67, 0.721);
+  --surface: #1d1d1d;
+}
+
+/* ----- ARBORIST LIGHT OVERRIDE ----- */
+[data-section="arborist"] {
+  --paper: #d9f3e6; /* page background */
+  --ink: #3b2343; /* headers, titles */
+  --ink-soft: #1a1e30; /* blog text, footer, tags */
+  --signal: #a120d0; /* the one accent color */
+  --line: #5d8274; /* borders, rules */
+  --surface: #d1dad5; /* cards, raised panels */
+}
+
+/* ----- ARBORIST DARK OVERRIDE ----- */
+[data-section="arborist"].dark {
+  --paper: #10120d;
+  --ink: #c89f59;
+  --ink-soft: #9a9ca6;
+  --signal: #d43737;
+  --line: rgba(68, 59, 36, 0.721);
+  --surface: #1a1b20;
+}
+
+/* ----- SCIENTIST LIGHT OVERRIDE ----- */
+[data-section="scientist"] {
+  --paper: #d9f3e6; /* page background */
   --ink: #232843; /* headers, titles */
   --ink-soft: #1a1e30; /* blog text, footer, tags */
   --signal: #2040d0; /* the one accent color */
@@ -21,9 +62,8 @@
   --surface: #d1dad5; /* cards, raised panels */
 }
 
-.dark {
-  color-scheme: dark;
-
+/* ----- SCIENTIST DARK OVERRIDE ----- */
+[data-section="scientist"].dark {
   --paper: #10120d;
   --ink: #59c88d;
   --ink-soft: #9a9ca6;

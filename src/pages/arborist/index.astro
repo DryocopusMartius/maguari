@@ -9,10 +9,13 @@ import { SITE } from '@/site.config';
 
 <BaseLayout title={SITE.name}>
   <section class="mx-auto max-w-3xl px-6 pt-16 pb-20 sm:pt-24">
-
+    <p class="text-ink-soft mb-6 inline-flex items-center gap-2 font-mono text-xs">
+      <span class="bg-signal h-1.5 w-1.5 rounded-full" aria-hidden="true"></span>
+      gerade am klettern
+    </p>
     <div class="flex items-center justify-center gap-3">
       <h1 class="font-display text-ink max-w-2xl text-4xl leading-[1.1] font-medium sm:text-5xl">
-      {SITE.tagline}
+      Klettert auf Bäume seit er 5 ist, schafft damit Mehrwert seit er 20 ist
       </h1>
       <svg
         class="	w-50 h-50 md:w-50 md:h-30"
@@ -22,17 +25,32 @@ import { SITE } from '@/site.config';
       </svg>
     </div>
     <p class="text-ink-soft mt-6 max-w-md">
-      Welcome to my personal little website! It is structured into two major components, my role as a scientist and my role as an arborist. In each you find some blog-posts, some information about ongoing and past projects and a gallery.
+      Du bist auf der Seite, die sich mit meinem Dasein als Baumkletterer beschäftigt. Wenn du dich für meine Arbeit als Forstwissenschaftler interessierst klick hier.
     </p>
 
     <div class="mt-8 flex flex-wrap items-center gap-3">
-      <Button href="/scientist" variant="solid">Tillman Reuter, the scientist</Button>
-      <Button href="/arborist" variant="solid">Tillman reuter, the tree climber</Button>
+      <Button href="/blog" variant="solid">Tillman Reuter, der Forstwissenschaftler</Button>
+      <Button href="#contact" variant="ghost">Kontaktiere mich!</Button>
     </div>
   </section>
 
+  <section id="about" class="mx-auto max-w-3xl px-6 pb-20">
+    <SectionHeading eyebrow="Werdegang" />
+    <p class="text-ink-soft max-w-xl">
+      2025: Gründung meines "Tillman Reuter Seilklettertechnik"-Einzelunternehmen
+      2020: SKT-A Zertifizierung
+      2020: AS-Baum 1 Motorsägenlehrgang
+    </p>
+    <a href="/about" class="text-signal mt-4 inline-block font-mono text-xs hover:underline">
+      Mein Lebenslauf →
+    </a>
+  </section>
+
   <section id="contact" class="mx-auto max-w-3xl px-6 pb-24">
-    <SectionHeading eyebrow="Let's talk" />
+    <SectionHeading eyebrow="Kontakt" />
+    <p class="font-display text-ink max-w-lg text-2xl sm:text-3xl">
+      Dein Baum braucht Pflege?
+    </p>
     <a
       href={`mailto:${SITE.email}`}
       class="text-signal mt-4 inline-flex items-center gap-2 font-mono hover:underline"
