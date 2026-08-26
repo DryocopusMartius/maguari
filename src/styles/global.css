@@ -10,30 +10,33 @@
    entire site — every component reads from the tokens below, nothing
    hardcodes a hex value.
    --------------------------------------------------------------------- */
+
+/* baseline light bw */
 :root {
   color-scheme: light;
 
-  --paper: #d9f3e6; /* page background */
-  --ink: #393939; /* headers, titles */
-  --ink-soft: #1a1e30; /* blog text, footer, tags */
-  --signal: #c9c9c9; /* the one accent color */
-  --line: #5d8274; /* borders, rules */
+  --paper: #ffffff; /* page background */
+  --ink: #232323; /* headers, titles */
+  --ink-soft: #2c2c2c; /* blog text, footer, tags */
+  --signal: #a2a2a2; /* the one accent color */
+  --line: #797979; /* borders, rules */
   --surface: #dadada; /* cards, raised panels */
 }
 
+/* baseline dark bw */
 .dark {
   color-scheme: dark;
 
-  --paper: #10120d;
+  --paper: #161616;
   --ink: #cacaca;
-  --ink-soft: #9a9ca6;
+  --ink-soft: #a7a7a7;
   --signal: #dddddd;
   --line: rgba(67, 67, 67, 0.721);
   --surface: #1d1d1d;
 }
 
 /* ----- ARBORIST LIGHT OVERRIDE ----- */
-[data-section="arborist"] {
+[data-section="arborist"].light {
   --paper: #d9f3e6; /* page background */
   --ink: #3b2343; /* headers, titles */
   --ink-soft: #1a1e30; /* blog text, footer, tags */
@@ -53,7 +56,7 @@
 }
 
 /* ----- SCIENTIST LIGHT OVERRIDE ----- */
-[data-section="scientist"] {
+[data-section="scientist"].light {
   --paper: #d9f3e6; /* page background */
   --ink: #232843; /* headers, titles */
   --ink-soft: #1a1e30; /* blog text, footer, tags */
