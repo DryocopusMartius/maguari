@@ -9,6 +9,11 @@ import Logo from "src/components/Logo.astro";
 ---
 
 <BaseLayout title={SITE.name}>
+<div class="relative overflow-hidden">
+  <div class="pointer-events-none absolute inset-0 flex items-start justify-start opacity-5"
+    aria-hidden="true">
+      <Logo width={1500} height={1500} fill="ink" />
+  </div>
   <section class="mx-auto max-w-3xl px-6 pt-16 pb-20 sm:pt-24">
     <p class="text-ink-soft mb-6 inline-flex items-center gap-2 font-mono text-xs">
       <span class="bg-signal h-1.5 w-1.5 rounded-full" aria-hidden="true"></span>
@@ -18,7 +23,7 @@ import Logo from "src/components/Logo.astro";
       <h1 class="font-display text-ink max-w-2xl text-4xl leading-[1.1] font-medium sm:text-5xl">
       Using LiDAR to do forest inventory and uncover the secrets of forest ecosystems
       </h1>
-      <Logo />
+      <Logo class= "w-80 h-50 md:w-80 md:h-50"/>
     </div>
     <p class="text-ink-soft mt-6 max-w-md">
       This is the page about my work as a forest scientist. If you are interested in my tree-climbing work, click below.
@@ -26,16 +31,16 @@ import Logo from "src/components/Logo.astro";
 
     <div class="mt-8 flex flex-wrap items-center gap-3">
       <Button href="/arborist" variant="solid">Tillman Reuter, the arborist</Button>
-      <Button href="#contact" variant="ghost">Text me!</Button>
+      <Button href="#contact" variant="ghost">Contact me!</Button>
     </div>
   </section>
 
   <section id="cv" class="mx-auto max-w-3xl px-6 pb-20">
     <SectionHeading eyebrow="CV" />
     <p class="text-ink-soft max-w-xl">
-      2026: Research scientist at Dep. Spatial Structures and Digitization of Forests (Uni Göttingen)
-      2025: M.Sc Forest and Ecosystem Sciences
-      2023: B.Eng Forest Engineering
+      2026: Research scientist at Dep. Spatial Structures and Digitization of Forests (Uni Göttingen) <br/>
+      2025: M.Sc Forest and Ecosystem Sciences <br/>
+      2023: B.Eng Forest Engineering <br/>
     </p>
     <a href="/about" class="text-signal mt-4 inline-block font-mono text-xs hover:underline">
       My full CV ->
@@ -56,7 +61,7 @@ import Logo from "src/components/Logo.astro";
   <section id="contact" class="mx-auto max-w-3xl px-6 pb-24">
     <SectionHeading eyebrow="Contact" />
     <p class="font-display text-ink max-w-lg text-2xl sm:text-3xl">
-      Interested in collaboration?
+      Interested in my work?
     </p>
     <a
       href={`mailto:${SITE.email}`}
@@ -65,4 +70,5 @@ import Logo from "src/components/Logo.astro";
       {SITE.email}
     </a>
   </section>
+</div>
 </BaseLayout>

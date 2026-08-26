@@ -16,7 +16,17 @@ export const SITE = {
   locale: 'en',
 } as const;
 
-export const NAV_LINKS = [
-  { label: 'Blog', href: '/blog' },
-  { label: 'About', href: '/about' },
-] as const;
+export const NAV_LINKS = {
+  arborist: [
+    { label: 'Home', href: '/arborist' },
+    { label: 'Blog', href: '/arborist/blog' },
+    // ...
+  ],
+  scientist: [
+    { label: 'Home', href: '/scientist' },
+    { label: 'Blog', href: '/scientist/blog' }
+  ],
+  default: [
+    { label: 'Home', href: '/' },
+  ],
+};

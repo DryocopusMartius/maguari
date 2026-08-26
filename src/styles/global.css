@@ -36,13 +36,13 @@
 }
 
 /* ----- ARBORIST LIGHT OVERRIDE ----- */
-[data-section="arborist"].light {
-  --paper: #d9f3e6; /* page background */
-  --ink: #3b2343; /* headers, titles */
-  --ink-soft: #1a1e30; /* blog text, footer, tags */
-  --signal: #a120d0; /* the one accent color */
-  --line: #5d8274; /* borders, rules */
-  --surface: #d1dad5; /* cards, raised panels */
+[data-section="arborist"] {
+  --paper: #f4f4e6; /* page background */
+  --ink: #433123; /* headers, titles */
+  --ink-soft: #30251a; /* blog text, footer, tags */
+  --signal: #88552e; /* the one accent color */
+  --line: #233d3e; /* borders, rules */
+  --surface: #d3dad1; /* cards, raised panels */
 }
 
 /* ----- ARBORIST DARK OVERRIDE ----- */
@@ -50,15 +50,15 @@
   --paper: #10120d;
   --ink: #c89f59;
   --ink-soft: #9a9ca6;
-  --signal: #d43737;
+  --signal: #f1a72f;
   --line: rgba(68, 59, 36, 0.721);
   --surface: #1a1b20;
 }
 
 /* ----- SCIENTIST LIGHT OVERRIDE ----- */
-[data-section="scientist"].light {
-  --paper: #d9f3e6; /* page background */
-  --ink: #232843; /* headers, titles */
+[data-section="scientist"] {
+  --paper: #edf0f1; /* page background */
+  --ink: #0f153a; /* headers, titles */
   --ink-soft: #1a1e30; /* blog text, footer, tags */
   --signal: #2040d0; /* the one accent color */
   --line: #5d8274; /* borders, rules */
