@@ -4,8 +4,9 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import WorkRow from '@/components/WorkRow.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
 
-const allWork = (await getCollection('blog', ({ data }) => !data.draft)).sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+const allWork = (await getCollection('blog', ({ data }) => !data.draft))
+  .filter((entry) => entry.data.tags?.includes('arborist'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
 ---
 
@@ -16,7 +17,11 @@ const allWork = (await getCollection('blog', ({ data }) => !data.draft)).sort(
   <section class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
     <SectionHeading eyebrow="Blog posts" count={allWork.length} />
     <div>
-      {allWork.map((entry) => <WorkRow entry={entry} />)}
+      {allWork.map((entry) => 
+        <a href={`/arborist/blog/${entry.id}`} class="block border-b border-line py-4">
+          <h2 class="font-display text-ink text-xl">{entry.data.title}</h2>
+          <p class="text-ink-soft text-sm">{entry.data.summary}</p>
+        </a>)}
     </div>
   </section>
 </BaseLayout>

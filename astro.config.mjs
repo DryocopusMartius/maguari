@@ -26,7 +26,7 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.google(),
-      name: 'Zilla Slab',
+      name: 'Atkinson Hyperlegible Next',
       cssVariable: '--ff-display',
       weights: ['400', '500', '600'],
       styles: ['normal', 'italic'],

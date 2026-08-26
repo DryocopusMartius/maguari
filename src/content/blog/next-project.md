@@ -1,10 +1,9 @@
 ---
 title: Ropes and unwanted knots ... arghhh
 summary: How to not get your climbing rope tied up -- a mathematical perspective
-role: Self-employed arborist
 date: 2026-07-27
-tags: [Ropes, Knots, Math]
-repo: https://github.com/your-username/northwind-atlas
+lastedited: 2026-08-26
+tags: [Ropes, Knots, Math, arborist]
 featured: true
 draft: false
 ---
