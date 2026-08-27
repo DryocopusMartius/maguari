@@ -1,10 +1,9 @@
 ---
 title: Northwind Atlas
 summary: A live routing dashboard for a regional delivery fleet, built to stay readable with 40+ vehicles on screen at once.
-role: Frontend Engineer
 date: 2025-11-12
-tags: [Data Visualization, React, Mapbox]
-repo: https://github.com/your-username/northwind-atlas
+lastedited: 2026-08-26
+tags: [Data Visualization, React, Mapbox, arborist]
 featured: true
 draft: false
 ---

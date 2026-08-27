@@ -11,8 +11,8 @@ const blog = defineCollection({
     z.object({
       title: z.string(),
       summary: z.string().max(160),
-      role: z.string(),
       date: z.coerce.date(),
+      lastedited: z.coerce.date(),
       tags: z.array(z.string()).default([]),
       cover: image().optional(),
       url: z.url().optional(),

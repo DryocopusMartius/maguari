@@ -21,9 +21,9 @@ import Logo from "src/components/Logo.astro";
     </p>
     <div class="flex items-center justify-center gap-3">
       <h1 class="font-display text-ink max-w-2xl text-4xl leading-[1.1] font-medium sm:text-5xl">
-      Using LiDAR to do forest inventory and uncover the secrets of forest ecosystems
+      Using LiDAR for forest inventory and to quantify important ecosystem facets
       </h1>
-      <Logo class= "w-80 h-50 md:w-80 md:h-50"/>
+      <Logo class= "w-80 h-40 md:w-80 md:h-40"/>
     </div>
     <p class="text-ink-soft mt-6 max-w-md">
       This is the page about my work as a forest scientist. If you are interested in my tree-climbing work, click below.
@@ -50,10 +50,10 @@ import Logo from "src/components/Logo.astro";
   <section id="publications" class="mx-auto max-w-3xl px-6 pb-20">
     <SectionHeading eyebrow="Publications" />
     <p class="text-ink-soft max-w-xl">
-      Reuter, T., Seidel, S., & Seidel, D. (2026). Comparing Two Novel LiDAR-Based Indices for Quantifying Forest Structural Complexity. Ecology and Evolution, 16(5), e73605. https://doi.org/10.1002/ece3.73605
+      <b>Reuter, T.</b>, Seidel, S., & Seidel, D. (2026). Comparing Two Novel LiDAR-Based Indices for Quantifying Forest Structural Complexity. Ecology and Evolution, 16(5), e73605.
 
     </p>
-    <a href="https://doi.org/10.1002/ece3.73605" class="text-signal mt-4 inline-block font-mono text-xs hover:underline">
+    <a href="https://doi.org/10.1002/ece3.73605" target="_blank" rel="noopener noreferrer" class="text-signal mt-4 inline-block font-mono text-xs hover:underline">
       doi.org/10.1002/ece3.73605 ->
     </a>
   </section>
@@ -64,7 +64,7 @@ import Logo from "src/components/Logo.astro";
       Interested in my work?
     </p>
     <a
-      href={`mailto:${SITE.email}`}
+      href={`mailto:${SITE.email}`} 
       class="text-signal mt-4 inline-flex items-center gap-2 font-mono hover:underline"
     >
       {SITE.email}

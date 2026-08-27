@@ -18,35 +18,48 @@ import Logo from "src/components/Logo.astro";
     <section class="mx-auto max-w-3xl px-6 pt-16 pb-20 sm:pt-24">
       <p class="text-ink-soft mb-6 inline-flex items-center gap-2 font-mono text-xs">
         <span class="bg-signal h-1.5 w-1.5 rounded-full" aria-hidden="true"></span>
-        gerade am klettern
+        Nehme ab Oktober in und 100km um Göttingen gerne wieder Aufträge an
       </p>
       <div class="flex items-center justify-center gap-3">
         <h1 class="font-display text-ink max-w-2xl text-4xl leading-[1.1] font-medium sm:text-5xl">
-          Baumkletterer seit 2005, mit Gurt, Helm und Seil seit 2020,
-          ansässig in Göttingen
+          Baumkletterer seit 2005, mit Gurt, Helm und Seil seit 2019
         </h1>
-        <Logo class= "w-80 h-50 md:w-80 md:h-50"/>
+        <Logo class= "w-80 h-40 md:w-80 md:h-40"/>
       </div>
       <p class="text-ink-soft mt-6 max-w-md">
-        Du bist auf der Seite, die sich mit meinem Dasein als Baumkletterer beschäftigt. Wenn du dich für meine Arbeit als Forstwissenschaftler interessierst klick hier.
+        Du bist auf der Seite, die sich mit meinem Dasein als Baumkletterer beschäftigt. Wenn du dich für meine Arbeit als Forstwissenschaftler interessierst, klick hier.
       </p>
       
       <div class="mt-8 flex flex-wrap items-center gap-3">
-        <Button href="/scientist" variant="solid">Tillman Reuter, der Forstwissenschaftler</Button>
-        <Button href="#contact" variant="ghost">Kontaktiere mich!</Button>
+        <Button href="/scientist" variant="solid">Tillman Reuter, Forstwissenschaftler</Button>
+        <Button href="#contact" variant="ghost">Schreib mir!</Button>
       </div>
     </section>
     
+    <section id="offer" class="mx-auto max-w-3xl px-6 pb-20">
+      <SectionHeading eyebrow="Was ich anbiete" />
+      <p class="font-display text-ink max-w-lg text-2xl sm:text-3xl">
+        Mit der Handsäge im Baum
+      </p>
+      <p class="text-ink-soft max-w-xl whitespace-pre-line">
+        - Totholzentfernung <br/>
+        - Pflegeschnitte <br/>
+        - Leichte Einkürzungen <br/>
+        - Kleine Fällungen <br/>
+      </p>
+    </section>
+
     <section id="about" class="mx-auto max-w-3xl px-6 pb-20">
       <SectionHeading eyebrow="Werdegang" />
       <p class="text-ink-soft max-w-xl whitespace-pre-line">
-        2025: Gründung meines "Tillman Reuter Seilklettertechnik"-Einzelunternehmen <br/>
-        seit 2023: Forstingenieur (B.Eng.) <br/>
-        2020: AS-Baum 1 Motorsägenlehrgang <br/>
-        2019: SKT-A Zertifizierung <br/>
-        2019: Erstes Praktikum in der Baumpflege <br/>
+        <b>2025:</b> Gründung des Einzelunternehmen "Tillman Reuter Seilklettertechnik" <br/>
+        <b>2023:</b> Abschluss Forstingenieur (B.Eng.) <br/>
+        <b>2021-22:</b> Angestellter Baumpfleger (Minijob) <br/>
+        <b>2020:</b> AS-Baum 1 Motorsägenlehrgang <br/>
+        <b>2019:</b> SKT-A Zertifizierung <br/>
+        <b>2019:</b> Erstes Praktikum in der Baumpflege <br/>
       </p>
-      <a href="/about" class="text-signal mt-4 inline-block font-mono text-xs hover:underline">
+      <a href="/documents/cv" class="text-signal mt-4 inline-block font-mono text-xs hover:underline">
         Mein Lebenslauf →
       </a>
     </section>
@@ -54,10 +67,10 @@ import Logo from "src/components/Logo.astro";
     <section id="contact" class="mx-auto max-w-3xl px-6 pb-24">
       <SectionHeading eyebrow="Kontakt" />
       <p class="font-display text-ink max-w-lg text-2xl sm:text-3xl">
-        Dein Baum braucht Pflege?
+        Du suchst einen Baumkletterer?
       </p>
       <a
-      href={`mailto:${SITE.email}`}
+      href={`mailto:${SITE.email}`} 
       class="text-signal mt-4 inline-flex items-center gap-2 font-mono hover:underline"
       >
       {SITE.email}

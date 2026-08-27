@@ -17,7 +17,7 @@ interface Props {
 }
 
 const { entry } = Astro.props;
-const { title, summary, role, date, lastedited, tags, url, repo } = entry.data;
+const { title, summary, date, lastedited, tags, url, repo } = entry.data;
 const { Content } = await render(entry);
 
 const formattedDate = formatDate(date);

@@ -37,7 +37,7 @@
 
 /* ----- ARBORIST LIGHT OVERRIDE ----- */
 [data-section="arborist"] {
-  --paper: #f4f4e6; /* page background */
+  --paper: #f9f9ef; /* page background */
   --ink: #433123; /* headers, titles */
   --ink-soft: #30251a; /* blog text, footer, tags */
   --signal: #88552e; /* the one accent color */
@@ -48,9 +48,9 @@
 /* ----- ARBORIST DARK OVERRIDE ----- */
 [data-section="arborist"].dark {
   --paper: #10120d;
-  --ink: #c89f59;
+  --ink: #d8af69;
   --ink-soft: #9a9ca6;
-  --signal: #f1a72f;
+  --signal: #ffa600;
   --line: rgba(68, 59, 36, 0.721);
   --surface: #1a1b20;
 }
