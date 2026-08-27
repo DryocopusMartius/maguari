@@ -27,6 +27,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "deploy": "npx wrangler pages deploy dist",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
