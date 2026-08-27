@@ -42,7 +42,7 @@ const formattedLastEdited = formatDate(lastedited);
       {
         tags.length > 0 && (
           <div>
-            <dt class="inline">Stack — </dt>
+            <dt class="inline">Tags: </dt>
             <dd class="inline">{tags.join(', ')}</dd>
           </div>
         )
@@ -51,23 +51,6 @@ const formattedLastEdited = formatDate(lastedited);
 
     <div class="prose prose-sm sm:prose-base mt-10 max-w-2xl">
       <Content />
-    </div>
-
-    <div class="mt-10 flex flex-wrap gap-3">
-      {
-        url && (
-          <Button href={url} variant="solid">
-            Visit live →
-          </Button>
-        )
-      }
-      {
-        repo && (
-          <Button href={repo} variant="ghost">
-            View source
-          </Button>
-        )
-      }
     </div>
   </article>
 </BaseLayout>
