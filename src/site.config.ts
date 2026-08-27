@@ -3,15 +3,16 @@
 export const SITE = {
   name: 'Tillman Reuter',
   role: 'Forest Scientist',
-  email: 'tillman.reuter@tuta.io',
+  email: 'tillmanreuter@tuta.io',
   tagline: 'I research forest ecosystems using LiDAR and climb trees',
   description:
     'Who I am and how what I do has to do with you', //goes under about on the main page
   status: 'Currently studying to obtain Dr. rer. nat at University of Göttingen',
   social: [
     { label: 'E-Mail', href: 'mailto:tillmanreuter@tuta.io' },
-    { label: 'ResearchGate', href: 'https://www.researchgate.net/profile/Tillman-Reuter' },
+    { label: 'ResearchGate', href: 'https://www.researchgate.net/profile/Tillman-Reuter'},
     { label: 'Mastodon', href: 'https://ecoevo.social/@tillmanreuter' },
+    { label: 'Uni-Gö', href: 'https://uni-goettingen.de/en/704786.html' },
   ],
   locale: 'en',
 } as const;
