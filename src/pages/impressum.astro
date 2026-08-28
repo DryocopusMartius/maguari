@@ -10,10 +10,14 @@ import Logo from "src/components/Logo.astro";
 
 <BaseLayout title={SITE.name}>
 <div class="relative overflow-hidden">
-  <div class="pointer-events-none absolute inset-0 flex items-start justify-center opacity-5"
-    aria-hidden="true">
-    <Logo width={2000} height={2000} fill="ink" class="-translate-x-1/4"/>
-  </div>
+<div class="pointer-events-none absolute top-5 left-0 opacity-5 overflow-hidden" aria-hidden="true">
+  <Logo 
+    width="2000" 
+    height="2000" 
+    fill="ink" 
+    class="object-cover -translate-x-3/8"
+  />
+</div>
   <div class="flex justify-center">
       <Logo class= "m-8 w-50 h-50 md:w-50 md:h-20"/>
   </div>

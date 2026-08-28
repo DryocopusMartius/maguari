@@ -10,10 +10,14 @@ import Logo from "src/components/Logo.astro";
 
 <BaseLayout title={SITE.name}>
   <div class="relative overflow-hidden">
-    <div class="pointer-events-none absolute inset-0 flex items-start justify-center opacity-5"
-    aria-hidden="true">
-      <Logo width={2000} height={2000} fill="ink"  class="-translate-x-1/4"/>
-    </div>
+<div class="pointer-events-none absolute top-5 left-0 opacity-5 overflow-hidden" aria-hidden="true">
+  <Logo 
+    width="2000" 
+    height="2000" 
+    fill="ink" 
+    class="object-cover -translate-x-3/8"
+  />
+</div>
     <section class="mx-auto max-w-3xl px-6 pt-16 pb-20 sm:pt-24">
       <p class="text-ink-soft mb-6 inline-flex items-center gap-2 font-mono text-xs">
         <span class="bg-signal h-1.5 w-1.5 rounded-full" aria-hidden="true"></span>
@@ -23,7 +27,7 @@ import Logo from "src/components/Logo.astro";
         <h1 class="font-display text-ink max-w-2xl text-4xl leading-[1.1] font-medium sm:text-5xl">
           Baumkletterer seit 2005, mit Gurt, Helm und Seil seit 2019
         </h1>
-        <Logo class= "w-80 h-40 md:w-80 md:h-40"/>
+        <Logo class= "w-50 h-25 md:w-80 md:h-40"/>
       </div>
       <p class="text-ink-soft mt-6 max-w-md">
         Du bist auf der Seite, die sich mit meinem Dasein als Baumkletterer beschäftigt. Wenn du dich für meine Arbeit als Forstwissenschaftler interessierst, klick hier.
