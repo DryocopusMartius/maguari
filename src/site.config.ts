@@ -22,7 +22,7 @@ export const NAV_LINKS = {
     { label: 'Home', href: '/' },
     { label: 'Blog', href: '/arborist/blog' },
     { label: 'Gallery', href: '/arborist/gallery' },
-    { label: 'Contact', href: '/arborist/#contact' },
+    { label: 'Contact', href: '/arborist/#bottom' },
     { label: 'Impressum', href: '/impressum' }
     // ...
   ],
@@ -30,12 +30,12 @@ export const NAV_LINKS = {
     { label: 'Home', href: '/' },
     { label: 'Blog', href: '/scientist/blog' },
     { label: 'Gallery', href: '/scientist/gallery' },
-    { label: 'Contact', href: '/scientist/#contact' },
+    { label: 'Contact', href: '/scientist/#bottom' },
     { label: 'Impressum', href: '/impressum' },
   ],
   default: [
     { label: 'Home', href: '/' },
-    { label: 'Contact', href: '/#contact' },
+    { label: 'Contact', href: 'mailto:tillmanreuter@tuta.io' },
     { label: 'Impressum', href: '/impressum' },
   ],
 };
