@@ -4,10 +4,8 @@ export const SITE = {
   name: 'Tillman Reuter',
   role: 'Forest Scientist',
   email: 'tillmanreuter@tuta.io',
+  description: 'text',
   tagline: 'I research forest ecosystems using LiDAR and climb trees',
-  description:
-    'Who I am and how what I do has to do with you', //goes under about on the main page
-  status: 'Currently studying to obtain Dr. rer. nat at University of Göttingen',
   social: [
     { label: 'E-Mail', href: 'mailto:tillmanreuter@tuta.io' },
     { label: 'ResearchGate', href: 'https://www.researchgate.net/profile/Tillman-Reuter'},
@@ -19,7 +17,7 @@ export const SITE = {
 
 export const NAV_LINKS = {
   arborist: [
-    { label: 'Home', href: '/' },
+    { label: 'Home', href: '/arborist' },
     { label: 'Blog', href: '/arborist/blog' },
     { label: 'Gallery', href: '/arborist/gallery' },
     { label: 'Contact', href: '/arborist/#bottom' },
@@ -27,7 +25,7 @@ export const NAV_LINKS = {
     // ...
   ],
   scientist: [
-    { label: 'Home', href: '/' },
+    { label: 'Home', href: '/scientist' },
     { label: 'Blog', href: '/scientist/blog' },
     { label: 'Gallery', href: '/scientist/gallery' },
     { label: 'Contact', href: '/scientist/#bottom' },
