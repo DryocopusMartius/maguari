@@ -31,8 +31,11 @@ export const NAV_LINKS = {
     { label: 'Contact', href: '/scientist/#bottom' },
     { label: 'Impressum', href: '/impressum' },
   ],
+  impressum: [
+    { label: 'Home', href: '/' },
+  ],
   default: [
-    { label: 'Home', href: '' },
+    { label: 'Home', href: '/' },
     { label: 'Contact', href: 'mailto:tillmanreuter@tuta.io' },
     { label: 'Impressum', href: '/impressum' },
   ],
