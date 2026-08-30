@@ -1,21 +1,20 @@
 ---
 // src/pages/gallery.astro
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import Pandabox from "src/components/Pandabox.astro";
+import Pandabox from "@/components/Pandabox.astro";
 import Button from '@/components/Button.astro';
 import SectionHeading from '@/components/SectionHeading.astro';
 import { SITE } from '@/site.config';
-import Logo from "src/components/Logo.astro";
 import { getEntry } from 'astro:content';
 
 const galleryEntry = await getEntry("galleries", "portfolio");
-const images = galleryEntry.data.images.length;
+const images = galleryEntry!.data.images;
 ---
 
 <BaseLayout title={SITE.name}>
 
 <section class="mx-auto max-w-3xl px-6 pt-16 pb-24 sm:pt-24">
-  <SectionHeading eyebrow="Gallery" count={images} />
+  <SectionHeading eyebrow="Gallery" count={images.length} />
   <main>
     <Pandabox galleryid="portfolio" transitionType="fade" />
   </main>

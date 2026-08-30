@@ -4,6 +4,7 @@ import Footer from '@/components/Footer.astro';
 import { SITE } from '@/site.config';
 import '@/styles/global.css';
 import BaseHead from '@/components/BaseHead.astro';
+import Logo from "@/components/Logo.astro";
 
 interface Props {
   title: string;
@@ -27,7 +28,17 @@ else if (pathname.startsWith('/arborist')) section = 'arborist';
   <body id="top" class="bg-paper text-ink">
     <Header section={section} />
     <main>
+    <div class="relative overflow-hidden">
+      <div class="pointer-events-none absolute top-5 left-0 opacity-5 overflow-hidden" aria-hidden="true">
+        <Logo 
+          width="2000" 
+          height="2000" 
+          fill="ink" 
+          class="object-cover -translate-x-3/8"
+        />
+      </div>
       <slot />
+    </div>
     </main>
     <div id="bottom"></div>
     <Footer />
