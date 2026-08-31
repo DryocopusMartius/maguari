@@ -1,9 +1,9 @@
 {
-  "name": "portfolio-starter",
+  "name": "Tillman Reuter",
   "type": "module",
   "version": "1.0.0",
   "private": false,
-  "description": "A minimal, professional portfolio starter for Astro — TypeScript, Tailwind CSS v4, Content Collections, dark mode, and full SEO, with no unnecessary dependencies.",
+  "description": "My minimal portfolio website, features added step-by-step",
   "keywords": [
     "astro",
     "astro-theme",
@@ -11,15 +11,18 @@
     "portfolio",
     "tailwindcss",
     "typescript",
-    "starter"
+    "scientist",
+    "arborist",
+    "forest-science",
+    "research"
   ],
   "license": "MIT",
-  "author": "Bracozs",
+  "author": "Tillman Reuter",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/portfolio-starter"
+    "url": "https://github.com/DryocopusMartius/maguari"
   },
-  "homepage": "https://github.com/your-username/portfolio-starter",
+  "homepage": "https://tillmanreuter.xyz",
   "engines": {
     "node": ">=22.0.0"
   },
